@@ -1,15 +1,50 @@
 <html>
     <head>
-        <title>Jasper Yu</title>
+        <title>Menu</title>
+        
+        <link rel="stylesheet" type ="text/css" href = "index.css">
+        <script lang="javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+               var links = document.querySelectorAll('nav ul li a');
+               var article = document.getElementById('articleContent');
+
+               links.forEach(function(link) {
+                  link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var pageURL = this.getAttribute('data-url');
+
+                        fetch(pageURL)
+                           .then(response => response.text())
+                           .then(data => {
+                              article.innerHTML = data;
+                           })
+                           .catch(error => {
+                              article.innerHTML = 'Error loading content: ' + error.message;
+                           });
+                  });
+               });
+            });
+        </script>
+
     </head>
-    <body>   
-        <h3> <a href = "./minecraft.html"> Minecraft</a></h3>
-        <hr>
-        <h3> <a href = "./space.html"> Space</a></h3>
-        <hr>
-        <h3> <a href = "./cht.html">Cyclones, Hurricanes and Typhoons</a></h3>
-        <hr>
-        <h3> <a href = "./earthq.html">Earthquakes</a></h3>
+    <body>
+       <header>
+          <h2>Menu</h2>
+          
+       </header>
+       <section>
+          <nav>
+             <ul>
+               <li> <a href = "#" data-url="minecraft.html"> Minecraft</a>
+               <li> <a href = "#" data-url="./space.html"> Space</a>
+               <li> <a href = "#" data-content="Cyclones, Hurricanes and Typhoons">Cyclones, Hurricanes and Typhoons</a>
+               <li> <a href = "#" data-content="Earthquakes">Earthquakes</a>
+             </ul>
+          </nav>
+
+          <article id="articleContent">
+               <!-- content will be loaded here-->
+          </article>
     </body>
 
 
