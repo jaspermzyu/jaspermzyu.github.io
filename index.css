@@ -1,0 +1,41 @@
+header {
+    background-color:royalblue;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: springgreen;
+  }
+nav{
+    float:left;
+    width:30%;
+    height: 300px;
+    background: navy;
+    padding: 20px;
+}
+
+section::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color:slateblue;
+    padding: 10px;
+    text-align: center;
+    color: springgreen;
+}
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+li{
+    color:navy;
+}
+  
+a{
+    color:springgreen;
+}
