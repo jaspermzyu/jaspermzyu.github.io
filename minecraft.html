@@ -9,8 +9,199 @@
     The Frog is a new mob that can pretty much eat anything, but if it eats a magma cube it will drop a frog light which is basically a coloured sea lantern. Meanwhile a tadpole is a new mob that comes out from frog eggs and after some time it will become a frog. It looks like a thing with eyes with eyes and a tail and a frog changes colour depending on what biome it is in. Sculk blocks are the Sculk block, 4the Sculk sensor, the Sculk Catalyst and the Sculk shrieker. The Sculk block is naturally generated near ancient cities and in ancient cities. The Sculk Catalyst creates more Sculk blocks and Sculk veins when a mob or player dies from a 8-block radius it will spread sculk towards where you or the mob died. The Sculk sensor detects the sound waves you send when you're walking, mining and placing a block with the exception of wool and Carpets. The Mangrove Swamp is a new biome that frogs naturally spawn in and where the frogs breed. The most common frog light is the pearlescent frog light but there are also green and orange frog lights. The Allay may be invincible to your attacks and other mobs attacks but it is not immune to lava or water.</i></p>
 <hr>
 <h2><i>1.20+:</i></h2>
-<p><i>The Tails and Trails update introduced new mechanics and items as well as mobs. In this update Mojang added a item called a brush which is used to brush blocks and if you see gravel or sand with a suspicious texture, then use the brush on it and u can get a range of different thing such as pottery sherds. Armor Trims, there are 16 unique armor trims that you can use with different ingots to get different colors and each armor trim has a unique pattern that you can add to your armor. Not elytras though. You can duplicate trims by using seven diamonds and a unique block depending which armor trim you have. The Sniffer is a mob that u cna hatch from eggs that u can find in the ocean structure other than the ocean monument and the shipwreck or the abandoned Nether Portal. The egg hatches quicker on moss. The sniffer can sniff out ancient seed such as the pitchflower seed or the torchflower seed. The Camel is a new mob that two people can ride on if the camel has a saddle as well as being able to dash up to 12 blocks. Hostile mobs cannot damage u with the exception of the warden, wither, enderdragon, guardians and elder guardians.</i></p>
+<p><i>The Trails and Tales update introduced new mechanics and items as well as mobs. In this update Mojang added a item called a brush which is used to brush blocks and if you see gravel or sand with a suspicious texture, then use the brush on it and u can get a range of different thing such as pottery sherds. Armor Trims, there are 16 unique armor trims that you can use with different ingots to get different colors and each armor trim has a unique pattern that you can add to your armor. Not elytras though. You can duplicate trims by using seven diamonds and a unique block depending which armor trim you have. The Sniffer is a mob that u cna hatch from eggs that u can find in the ocean structure other than the ocean monument and the shipwreck or the abandoned Nether Portal. The egg hatches quicker on moss. The sniffer can sniff out ancient seed such as the pitchflower seed or the torchflower seed. The Camel is a new mob that two people can ride on if the camel has a saddle as well as being able to dash up to 12 blocks. Hostile mobs cannot damage u with the exception of the warden, wither, enderdragon, guardians and elder guardians.</i></p>
+<h3>Minecraft Java Commands list</h3>
 <hr>
-<p>Links: <a href = "https://mcreator.net/wiki/potion-effect-ids">Potion Effect ids</a>, <a href ="https://help.minecraft.net/hc/en-us/articles/360058730912-Minecraft-List-of-Enchantments">All Enchantments List</a>, <a href="https://www.digminecraft.com/game_commands/index.php"> All commands</a>, <a href="https://minecraft-ids.grahamedgecombe.com/">All Minecraft Ids</a>, <a href = "https://www.curseforge.com/">CurseForge</a>, <a href = "https://modrinth.com/">Modrinth</a></p>
+<table>
+    <tr>
+        <th>Command</th>
+        <th>Uses</th>
+        <th>How to use</th>
+    </tr>
+    <tr>
+        <td>/particle</td>
+        <td>creates particles of your choice</td>
+        <td>/particle dragons_breath ~ ~ ~  0 0 0 1 2 0 force</td>
+    </tr>
+    <tr>
+        <td>/time</td>
+        <td>changes the time of your minecraft world</td>
+        <td>/time set day</td>
+    </tr>
+    <tr>
+        <td>/advancement</td>
+        <td>gives, remove or checks player advancements</td>
+        <td>/advancement grant @e everything</td>
+    </tr>
+    <tr>
+        <td>/attributes</td>
+        <td>Adds removes or sets an entity attribute</td>
+        <td>/give @s netherite_sword<b>{AttributeModifiers:[{AttributeName:"generic.attack_damage", Name:"generic.attack_damage", Amount:20.0, Operation:0, UUID:[I; 42853, 1689024593, -201178, -1559272105]}]}</b> 1</td>
+    </tr>
+    <tr>
+        <td>/ban</td>
+        <td> adds player to banlist</td>
+        <td>/ban [players username]</td>
+    </tr>
+    <tr>
+        <td>/banlist</td>
+        <td>Displays banlist</td>
+        <td>/banlist</td>
+    </tr>
+    <tr>
+        <td>/bossbar</td>
+        <td>Creates and modifies bossbars</td>
+        <td>/bossbar add first {"text":"Boss Health","color":"blue","bold":true}</td>
+    </tr>
+    <tr>
+        <td>/clear</td>
+        <td> clears items form player inventory</td>
+        <td>/clear [players username]</td>
+    </tr>
+    <tr>
+        <td>/damage</td>
+        <td>applies damage to to specific entities</td>
+        <td>/damage @e[type=iron_golem, limit=1] 1 generic by @e[type=villager, limit=1, name="villager_1"] </td>
+    </tr>
+    <tr>
+        <td>/data</td>
+        <td>Get's, merges, modifies and removes block entity and entity NBT data</td>
+        <td>/data modify entity @e[type=item,distance=..10,limit=1,sort=nearest] PickupDelay set value -1</td>
+    </tr>
+    <tr>
+        <td>/deop</td>
+        <td>revokes operator status from a player</td>
+        <td>/deop [players username]</td>
+    </tr>
+    <tr>
+        <td>/effect</td>
+        <td> Adds or removes an effect from an entity</td>
+        <td>/effect @e speed infinite 255</td>
+    </tr>
+    <tr>
+        <td>/enchant</td>
+        <td>adds an enchantment to a players selected item</td>
+        <td>/enchant [players username] knockback 2</td>
+    </tr>
+    <tr>
+        <td>/execute</td>
+        <td>executes another command</td>
+        <td>/execute @e[type=egg] ~ ~ ~ effect give @e 999999999 255</td>
+    </tr>
+    <tr>
+        <td>/experience</td>
+        <td>adds or emoves player's experience</td>
+        <td>/experience add [players username] 10000 levels</td>
+    </tr>
+    <tr>
+        <td>/gamemode</td>
+        <td>sets a players gamemode</td>
+        <td>/gamemode survival @e</td>
+    </tr>
+    <tr>
+        <td>/item</td>
+        <td>maipulates items in inventories</td>
+        <td>/item replace entity [players username] armor.head with netherite_helmet</td>
+    </tr>
+    <tr>
+        <td>/kick</td>
+        <td>kicks a player off a server</td>
+        <td>/kick [player username]</td>
+    </tr>
+    <tr>
+        <td>/kill</td>
+        <td>kills entities</td>
+        <td>/kill @e</td>
+    </tr>
+    <tr>
+        <td>/list</td>
+        <td>Lists players on the server</td>
+        <td>/list</td>
+    </tr>
+    <tr>
+        <td>/loot</td>
+        <td>drops items from an inventory slot onto the ground</td>
+        <td>/loot give [player username] kill </td>
+    </tr>
+    <tr>
+        <td>/me</td>
+        <td>Displays a message about the sender</td>
+        <td>/me is lost</td>
+    </tr>
+    <tr>
+        <td>/msg</td>
+        <td> displats a private message to other players</td>
+        <td>/msg [players username] I found diamonds</td>
+
+    </tr>
+    <tr>
+        <td>/op</td>
+        <td>Grants Operator status to a player</td>
+        <td>/op [players username]</td>
+    </tr>
+    <tr>
+        <td>/scoreboard</td>
+    </tr>
+    <tr>
+        <td>/tag</td>
+    </tr>
+    <tr>
+        <td>/tp</td>
+    </tr>
+    <tr>
+        <td>/clone</td>
+    </tr>
+    <tr>
+        <td>/datapack</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>/defaultgamemode</td>
+    </tr>
+    <tr>
+        <td>/difficulty</td>
+    </tr>
+    <tr>
+        <td>/fill</td>
+    </tr>
+    <tr>
+        <td>/forceload</td>
+    </tr>
+    <tr>
+        <td>/function</td>
+    </tr>
+    <tr>
+        <td>/gamerule</td>
+    </tr>
+    <tr>
+        <td>/give</td>
+    </tr>
+    <tr>
+        <td>/locate</td>
+    </tr>
+    <tr>
+        <td>/place</td>
+    </tr>
+    <tr>
+        <td>/reload</td>
+    </tr>
+    <tr>
+        <td>/seed</td>
+    </tr>
+    <tr>
+        <td>/setblock</td>
+    </tr>
+    <tr>
+        <td>/summon</td>
+    </tr>
+    <tr>
+        <td>/weather</td>
+    </tr>
+    <tr>
+        <td>/worldborder</td>
+    </tr>
+</table>
+<hr>
+<p>Links: <a href = "https://mcreator.net/wiki/potion-effect-ids">Potion Effect ids</a>, <a href ="https://help.minecraft.net/hc/en-us/articles/360058730912-Minecraft-List-of-Enchantments">All Enchantments List</a>, <a href="https://www.digminecraft.com/game_commands/index.php"> All commands</a>, <a href="https://minecraft-ids.grahamedgecombe.com/">All Minecraft Ids</a>, <a href = "https://www.curseforge.com/">CurseForge</a>, <a href = "https://modrinth.com/">Modrinth, </a><a href ="https://www.digminecraft.com/lists/advancements_pc.php"> Advancment Ids</a>, <a href ="https://minecraft.fandom.com/wiki/Attribute">Attribute Ids</a></p>
 
 <link rel="stylesheet" type ="text/css" href = "earthq.css">

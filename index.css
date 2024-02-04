@@ -45,9 +45,10 @@ article {
     float: right;
     width: 70%;         /* Adjust the width as needed */
     /* or use max-height: 500px; if you want the box to grow until it reaches this height */
-    margin: 20px auto;  /* Centering the article */
-    overflow-y: auto;   /* This enables vertical scrolling */
-    padding: 10px;      /* Optional padding */
+    margin: 20px auto;  /* Centering the article */  /* This enables vertical scrolling */
+    padding: 10px;
+    height: 600px;
+    overflow:auto;      /* Optional padding */
 }
 li{
     color:navy;
