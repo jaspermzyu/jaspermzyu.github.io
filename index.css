@@ -1,13 +1,21 @@
+body{
+    margin: 0px;
+}
+
 header {
-    background-color:royalblue;
+    background-color: white;
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color: springgreen;
+    color: rgb(43, 10, 120);
   }
-nav{
+
+section {
     float:left;
-    width:30%;
+    width:25%;
+}
+
+nav{
     height: 300px;
     background: navy;
     padding: 20px;
@@ -20,10 +28,11 @@ section::after{
 }
 
 footer {
+    clear:both;
     background-color:slateblue;
     padding: 10px;
     text-align: center;
-    color: springgreen;
+    color: azure;
 }
 @media (max-width: 600px) {
     nav, article {
@@ -31,11 +40,28 @@ footer {
       height: auto;
     }
   }
-  
+
+article {
+    float: right;
+    width: 70%;         /* Adjust the width as needed */
+    /* or use max-height: 500px; if you want the box to grow until it reaches this height */
+    margin: 20px auto;  /* Centering the article */
+    overflow-y: auto;   /* This enables vertical scrolling */
+    padding: 10px;      /* Optional padding */
+}
 li{
     color:navy;
 }
   
 a{
-    color:springgreen;
+    color:azure;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+html{
+    background: darkblue;
 }
