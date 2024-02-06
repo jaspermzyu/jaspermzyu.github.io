@@ -1,29 +1,29 @@
 p{
 
-color: aliceblue;
+color:  black;
 
 }
 
 body{
 
-    background: darkblue;
+    background: white;
 }
 
 h1{
 
-    color: azure;
+    color: black;
 }
 
 a{
 
-    color:azure;
+    color: white;
 
 }
 h3{
-    color:azure;
+    color: black;
 }
 h2{
-    color:azure;
+    color: black;
 }
 table {
     font-family: arial, sans-serif;
@@ -38,5 +38,10 @@ table {
   }
   
 tr{
-    color:white;
+    color:black;
+}
+
+
+.fire a{
+    color:black;
 }

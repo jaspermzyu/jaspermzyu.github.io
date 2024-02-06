@@ -19,12 +19,12 @@
         <th>How to use</th>
     </tr>
     <tr>
-        <td>/particle</td>
+        <td><strong>/particle</strong></td>
         <td>creates particles of your choice</td>
         <td>/particle dragons_breath ~ ~ ~  0 0 0 1 2 0 force</td>
     </tr>
     <tr>
-        <td>/time</td>
+        <td><strong>/time</strong>/td>
         <td>changes the time of your minecraft world</td>
         <td>/time set day</td>
     </tr>
@@ -49,12 +49,12 @@
         <td>/banlist</td>
     </tr>
     <tr>
-        <td>/bossbar</td>
+        <td><strong>/bossbar</strong></td>
         <td>Creates and modifies bossbars</td>
         <td>/bossbar add first {"text":"Boss Health","color":"blue","bold":true}</td>
     </tr>
     <tr>
-        <td>/clear</td>
+        <td><strong>/clear</strong></td>
         <td> clears items form player inventory</td>
         <td>/clear [players username]</td>
     </tr>
@@ -74,32 +74,32 @@
         <td>/deop [players username]</td>
     </tr>
     <tr>
-        <td>/effect</td>
+        <td><strong>/effect</strong></td>
         <td> Adds or removes an effect from an entity</td>
         <td>/effect @e speed infinite 255</td>
     </tr>
     <tr>
-        <td>/enchant</td>
+        <td><strong>/enchant</strong></td>
         <td>adds an enchantment to a players selected item</td>
         <td>/enchant [players username] knockback 2</td>
     </tr>
     <tr>
-        <td>/execute</td>
+        <td><strong>/execute</strong></td>
         <td>executes another command</td>
         <td>/execute @e[type=egg] ~ ~ ~ effect give @e 999999999 255</td>
     </tr>
     <tr>
-        <td>/experience</td>
+        <td><strong>/experience</strong></td>
         <td>adds or emoves player's experience</td>
         <td>/experience add [players username] 10000 levels</td>
     </tr>
     <tr>
-        <td>/gamemode</td>
+        <td><strong>/gamemode</strong></td>
         <td>sets a players gamemode</td>
         <td>/gamemode survival @e</td>
     </tr>
     <tr>
-        <td>/item</td>
+        <td><strong>/item</strong></td>
         <td>maipulates items in inventories</td>
         <td>/item replace entity [players username] armor.head with netherite_helmet</td>
     </tr>
@@ -109,7 +109,7 @@
         <td>/kick [player username]</td>
     </tr>
     <tr>
-        <td>/kill</td>
+        <td><strong>/kill</strong></td>
         <td>kills entities</td>
         <td>/kill @e</td>
     </tr>
@@ -129,79 +129,99 @@
         <td>/me is lost</td>
     </tr>
     <tr>
-        <td>/msg</td>
+        <td><strong>/msg</strong></td>
         <td> displats a private message to other players</td>
         <td>/msg [players username] I found diamonds</td>
 
     </tr>
     <tr>
-        <td>/op</td>
+        <td><strong>/op</strong></td>
         <td>Grants Operator status to a player</td>
         <td>/op [players username]</td>
     </tr>
     <tr>
-        <td>/scoreboard</td>
+        <td><strong>/scoreboard</strong></td>
+        <td>Manages scoreboard objectives and players</td>
+        <td>/scoreboard players list [players username]</td>
+        <td></td>
     </tr>
     <tr>
         <td>/tag</td>
+        <td>Controls enitity tags</td>
+        <td>/tag [entity type or players username]</td>
     </tr>
     <tr>
-        <td>/tp</td>
+        <td><strong>/tp</strong></td>
+        <td>teleports entities</td>
+        <td>/tp @e[type = !player] ~ ~ ~</td>
     </tr>
     <tr>
-        <td>/clone</td>
+        <td><strong>/clone</strong></td>
+        <td>copies blocks from one place to another</td>
+        <td>/clone ~ ~ ~   ~20 ~-3 ~15   ~-5 ~ ~-2 replace move</td>
     </tr>
     <tr>
         <td>/datapack</td>
+        <td>controls loaded datapacks</td>
+        <td>/datapack list</td>
     </tr>
     </tr>
     <tr>
-        <td>/defaultgamemode</td>
+        <td><strong>/difficulty</strong></td>
+        <td>sets the difficulty mode</td>
+        <td>/difficulty peaceful</td>
     </tr>
     <tr>
-        <td>/difficulty</td>
+        <td><strong>/fill</strong></td>
+        <td>Fills a region with a specific block</td>
+        <td>/fill ~ ~ ~ ~ ~ ~ air</td>
     </tr>
     <tr>
-        <td>/fill</td>
+        <td><strong>/gamerule</strong></td>
+        <td>sets or queries a gamerule value</td>
+        <td>/gamerule doDaylightCycle false</td>
     </tr>
     <tr>
-        <td>/forceload</td>
+        <td><strong>/give</strong></td>
+        <td>Gives an item to a player</td>
+        <td>/give @e minecraft:dirt_block</td>
     </tr>
     <tr>
-        <td>/function</td>
+        <td><strong>/locate</strong></td>
+        <td>locate closest structures, biomes or points of intrest</td>
+        <td>/locate Mansion</td>
     </tr>
     <tr>
-        <td>/gamerule</td>
-    </tr>
-    <tr>
-        <td>/give</td>
-    </tr>
-    <tr>
-        <td>/locate</td>
-    </tr>
-    <tr>
-        <td>/place</td>
-    </tr>
-    <tr>
+        <td>/reload</td>
+        <td>reloads loot tables, advancements and functions from disk</td>
         <td>/reload</td>
     </tr>
     <tr>
         <td>/seed</td>
+        <td>displays world seed</td>
+        <td>/seed</td>
     </tr>
     <tr>
-        <td>/setblock</td>
+        <td><strong>/setblock</strong></td>
+        <td>changes a block to another block</td>
+        <td>/setblock ~ ~ ~ ~ ~ ~ water</td>
     </tr>
     <tr>
-        <td>/summon</td>
+        <td><strong>/summon</strong></td>
+        <td>summons an entity</td>
+        <td>/summon minecraft:ender_dragon</td>
     </tr>
     <tr>
-        <td>/weather</td>
+        <td><strong>/weather</strong></td>
+        <td>sets the weather</td>
+        <td>/weather clear</td>
     </tr>
     <tr>
-        <td>/worldborder</td>
+        <td><strong>/worldborder</strong></td>
+        <td>Manages the world border</td>
+        <td>/world border set 1000000</td>
     </tr>
 </table>
 <hr>
-<p>Links: <a href = "https://mcreator.net/wiki/potion-effect-ids">Potion Effect ids</a>, <a href ="https://help.minecraft.net/hc/en-us/articles/360058730912-Minecraft-List-of-Enchantments">All Enchantments List</a>, <a href="https://www.digminecraft.com/game_commands/index.php"> All commands</a>, <a href="https://minecraft-ids.grahamedgecombe.com/">All Minecraft Ids</a>, <a href = "https://www.curseforge.com/">CurseForge</a>, <a href = "https://modrinth.com/">Modrinth, </a><a href ="https://www.digminecraft.com/lists/advancements_pc.php"> Advancment Ids</a>, <a href ="https://minecraft.fandom.com/wiki/Attribute">Attribute Ids</a></p>
 
-<link rel="stylesheet" type ="text/css" href = "earthq.css">
+<p class="fire">Links: <a href = "https://mcreator.net/wiki/potion-effect-ids">Potion Effect ids</a>, <a href ="https://help.minecraft.net/hc/en-us/articles/360058730912-Minecraft-List-of-Enchantments">All Enchantments List</a>, <a href="https://www.digminecraft.com/game_commands/index.php"> All commands</a>, <a href="https://minecraft-ids.grahamedgecombe.com/">All Minecraft Ids</a>, <a href = "https://www.curseforge.com/">CurseForge</a>, <a href = "https://modrinth.com/">Modrinth, </a><a href ="https://www.digminecraft.com/lists/advancements_pc.php"> Advancment Ids</a>, <a href ="https://minecraft.fandom.com/wiki/Attribute">Attribute Ids</a></p>
