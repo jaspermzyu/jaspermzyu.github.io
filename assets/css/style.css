@@ -432,6 +432,14 @@ section {
   color: #1f5297;
 }
 
+.facts ol {
+  list-style-type: decimal; /* Default style: numbers */
+}
+
+.facts ol li {
+  display: list-item !important; /* Ensures items are displayed as a list */
+}
+
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
