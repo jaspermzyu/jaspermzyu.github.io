@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- this is our customised JS file, which contains many functions-->
+  <script src="assets/js/utility.js"></script>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Updated: Jan 29 2024 with Bootstrap v5.3.2
@@ -54,12 +57,13 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-cube"></i> <span>Minecraft</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-cloud-lightning"></i> <span>Windy Disasters</span></a></li>
+          <li><a href="#disasters" class="nav-link scrollto"><i class="bx bx-cloud-lightning"></i> <span>Windy Disasters</span></a></li>
           <li><a href="#earthquake" class="nav-link scrollto"><i class="bx bx-cube-alt"></i> <span>Earthquakes</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-analyse"></i> <span>Space</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-ghost"></i> <span>Bushfires</span></a></li>
           <li><a href="#vs" class="nav-link scrollto"><i class="bx bx-sushi"></i> <span>Volcanoes</span></a></li>
           <li><a href="#GRM" class="nav-link scrollto"><i class="bx bx-list-minus"></i> <span>Mythology</span></a></li>
+          <li><a href="#CL" class="nav-link scrollto"><i class="bx bx-list-minus"></i> <span>Coding</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -78,360 +82,24 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container">
-      <ul class="nav nav-pills mb-3" id="pills-tab"  role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">1.20+</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">1.19+</button>
-      </ul>
-      <div style="margin-left:15px;" class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-          <p>The Trails and Tales update introduced new mechanics and items as well as mobs.</p>
-          <p><i>
-            In this update Mojang added a item called a brush which is used to brush blocks and if you see gravel or sand with a suspicious texture, 
-            then use the brush on it and u can get a range of different thing such as pottery sherds. Armor Trims, 
-            there are 16 unique armor trims that you can use with different ingots to get different colors and each armor trim has a unique pattern that you can add to your armor. Not elytras though. 
-            You can duplicate trims by using seven diamonds and a unique block depending which armor trim you have. The Sniffer is a mob that you can hatch from eggs that u can find in the ocean structure other than the ocean monument and the shipwreck 
-            or the abandoned Nether Portal. The egg hatches quicker on moss. The sniffer can sniff out ancient seed such as the pitchflower seed or the torchflower seed. The Camel is a new mob that two people can ride on if the camel has a saddle as well as being able to dash up to 12 blocks. 
-            Hostile mobs cannot damage u with the exception of the warden, wither, enderdragon, guardians and elder guardians.
-          </i></p>
-
-        </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-          <p><i>The Wild update introduces new mobs and items. The Warden: a creature with more strength and power than the wither and ender dragon. 
-            The warden is blind mob which has 500 health points and 45 points of damage which can almost one shot anything can one shot you with diamond or netherite gear. 
-            The only way you can survive one shot is to have netherite or diamond gear enchanted with protection 2 to make it a 2 shot K.O. The Allay is a friendly mob that is found in cages near the woodland mansion. 
-            it's practically invincible to anything’s attack when it is holding an item or a block. 
-            The Frog is a new mob that can prettyxwuch eat anything, but if it eats a magma cube it will drop a frog light which is basically a coloured sea lantern. Meanwhile a tadpole is a new mob that comes out from frog eggs and after some time it will become a frog. 
-            It looks like a thing with eyes with eyes and a tail and a frog changes colour depending on what biome it is in. Sculk blocks are the Sculk block,
-             4the Sculk sensor, the Sculk Catalyst and the Sculk shrieker. 
-             The Sculk block is naturally generated near ancient cities and in ancient cities. 
-             The Sculk Catalyst creates more Sculk blocks and Sculk veins when a mob or player dies from a 8-block radius it will spread sculk towards where you or the mob died. 
-             The Sculk sensor detects the sound waves you send when you're walking, mining and placing a block with the exception of wool and Carpets. 
-             The Mangrove Swamp is a new biome that frogs naturally spawn in and where the frogs breed. 
-             The most common frog light is the pearlescent frog light but there are also green and orange frog lights. 
-             The Allay may be invincible to your attacks and other mobs attacks but it is not immune to lava or water.
-        </i></p>
-
-        </div>
-        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-      </div>
-      <div class="row resume">
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="resume-title">Minecraft Releases</h3>
-          <div class="resume-item">
-            <h4>1.20 <span class="badge bg-secondary">Latest</span></h4>
-            <p><em>Released in 2023, June 7th</em></p>
-            <ol>
-              <li><b>Brush Item:</b> A tool for revealing hidden items in textured gravel or sand.</li>
-
-              <li><b>Armor Trims:</b> Decorative patterns for armor, customizable with ingots, not applicable to Elytras.</li>
-                
-              <li><b>Sniffer Mob:</b> A creature hatched from eggs that locates ancient seeds, hatches faster on moss.</li>
-                
-              <li><b>Camel Mob:</b> A two-person rideable mob with a dash ability, resistant to most hostile mobs except a few powerful ones.</li>
-            </ol>
-          </div>
-          <div class="resume-item">
-            <h4>1.19</h4>
-            <p><em>Released in 2022, June 7th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.18</h4>
-            <p><em>Released in 2021, November 30th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.17</h4>
-            <p><em>Released in 2021, June 8th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.16</h4>
-            <p><em>Released in 2020, June 3rd</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.15</h4>
-            <p><em>Released in 2019, December 10th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.14</h4>
-            <p><em>Released in 2018, April 23rd</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.13</h4>
-            <p><em>Released in 2018, July 18th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.12</h4>
-            <p><em>Released in 2017, June 7th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.11</h4>
-            <p><em>Released in 2016, November 14th</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>1.10</h4>
-            <p><em>Released in 2016, June 8th</em></p>
-          </div>
-          </div>
-        </div>
-      </div>
-     <div class="container">
-          <h5>Minecraft Java Commands list</h5>
-          <hr>
-
-        <div>
-          <table class="table table-hover">
-            <tr>
-                <th>Command</th>
-                <th>Uses</th>
-                <th>How to use</th>
-            </tr>
-            <tr>
-                <td><strong>/particle</strong></td>
-                <td>creates particles of your choice</td>
-                <td>/particle dragons_breath ~ ~ ~  0 0 0 1 2 0 force</td>
-            </tr>
-            <tr>
-                <td><strong>/time</strong></td>
-                <td>changes the time of your minecraft world</td>
-                <td>/time set day</td>
-            </tr>
-            <tr>
-                <td>/advancement</td>
-                <td>gives, remove or checks player advancements</td>
-                <td>/advancement grant @e everything</td>
-            </tr>
-            <tr>
-                <td>/attributes</td>
-                <td>Adds removes or sets an entity attribute</td>
-                <td>/give @s netherite_sword<b>{AttributeModifiers:[{AttributeName:"generic.attack_damage", Name:"generic.attack_damage", Amount:20.0, Operation:0, UUID:[I; 42853, 1689024593, -201178, -1559272105]}]}</b> 1</td>
-            </tr>
-            <tr>
-                <td>/ban</td>
-                <td> adds player to banlist</td>
-                <td>/ban [players username]</td>
-            </tr>
-            <tr>
-                <td>/banlist</td>
-                <td>Displays banlist</td>
-                <td>/banlist</td>
-            </tr>
-            <tr>
-                <td><strong>/bossbar</strong></td>
-                <td>Creates and modifies bossbars</td>
-                <td>/bossbar add first {"text":"Boss Health","color":"blue","bold":true}</td>
-            </tr>
-            <tr>
-                <td><strong>/clear</strong></td>
-                <td> clears items form player inventory</td>
-                <td>/clear [players username]</td>
-            </tr>
-            <tr>
-                <td>/damage</td>
-                <td>applies damage to to specific entities</td>
-                <td>/damage @e[type=iron_golem, limit=1] 1 generic by @e[type=villager, limit=1, name="villager_1"] </td>
-            </tr>
-            <tr>
-                <td>/data</td>
-                <td>Get's, merges, modifies and removes block entity and entity NBT data</td>
-                <td>/data modify entity @e[type=item,distance=..10,limit=1,sort=nearest] PickupDelay set value -1</td>
-            </tr>
-            <tr>
-                <td>/deop</td>
-                <td>revokes operator status from a player</td>
-                <td>/deop [players username]</td>
-            </tr>
-            <tr>
-                <td><strong>/effect</strong></td>
-                <td> Adds or removes an effect from an entity</td>
-                <td>/effect @e speed infinite 255</td>
-            </tr>
-            <tr>
-                <td><strong>/enchant</strong></td>
-                <td>adds an enchantment to a players selected item</td>
-                <td>/enchant [players username] knockback 2</td>
-            </tr>
-            <tr>
-                <td><strong>/execute</strong></td>
-                <td>executes another command</td>
-                <td>/execute @e[type=egg] ~ ~ ~ effect give @e 999999999 255</td>
-            </tr>
-            <tr>
-                <td><strong>/experience</strong></td>
-                <td>adds or emoves player's experience</td>
-                <td>/experience add [players username] 10000 levels</td>
-            </tr>
-            <tr>
-                <td><strong>/gamemode</strong></td>
-                <td>sets a players gamemode</td>
-                <td>/gamemode survival @e</td>
-            </tr>
-            <tr>
-                <td><strong>/item</strong></td>
-                <td>maipulates items in inventories</td>
-                <td>/item replace entity [players username] armor.head with netherite_helmet</td>
-            </tr>
-            <tr>
-                <td>/kick</td>
-                <td>kicks a player off a server</td>
-                <td>/kick [player username]</td>
-            </tr>
-            <tr>
-                <td><strong>/kill</strong></td>
-                <td>kills entities</td>
-                <td>/kill @e</td>
-            </tr>
-            <tr>
-                <td>/list</td>
-                <td>Lists players on the server</td>
-                <td>/list</td>
-            </tr>
-            <tr>
-                <td>/loot</td>
-                <td>drops items from an inventory slot onto the ground</td>
-                <td>/loot give [player username] kill </td>
-            </tr>
-            <tr>
-                <td>/me</td>
-                <td>Displays a message about the sender</td>
-                <td>/me is lost</td>
-            </tr>
-            <tr>
-                <td><strong>/msg</strong></td>
-                <td> displats a private message to other players</td>
-                <td>/msg [players username] I found diamonds</td>
-        
-            </tr>
-            <tr>
-                <td><strong>/op</strong></td>
-                <td>Grants Operator status to a player</td>
-                <td>/op [players username]</td>
-            </tr>
-            <tr>
-                <td><strong>/scoreboard</strong></td>
-                <td>Manages scoreboard objectives and players</td>
-                <td>/scoreboard players list [players username]</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>/tag</td>
-                <td>Controls enitity tags</td>
-                <td>/tag [entity type or players username]</td>
-            </tr>
-            <tr>
-                <td><strong>/tp</strong></td>
-                <td>teleports entities</td>
-                <td>/tp @e[type = !player] ~ ~ ~</td>
-            </tr>
-            <tr>
-                <td><strong>/clone</strong></td>
-                <td>copies blocks from one place to another</td>
-                <td>/clone ~ ~ ~   ~20 ~-3 ~15   ~-5 ~ ~-2 replace move</td>
-            </tr>
-            <tr>
-                <td>/datapack</td>
-                <td>controls loaded datapacks</td>
-                <td>/datapack list</td>
-            </tr>
-            </tr>
-            <tr>
-                <td><strong>/difficulty</strong></td>
-                <td>sets the difficulty mode</td>
-                <td>/difficulty peaceful</td>
-            </tr>
-            <tr>
-                <td><strong>/fill</strong></td>
-                <td>Fills a region with a specific block</td>
-                <td>/fill ~ ~ ~ ~ ~ ~ air</td>
-            </tr>
-            <tr>
-                <td><strong>/gamerule</strong></td>
-                <td>sets or queries a gamerule value</td>
-                <td>/gamerule doDaylightCycle false</td>
-            </tr>
-            <tr>
-                <td><strong>/give</strong></td>
-                <td>Gives an item to a player</td>
-                <td>/give @e minecraft:dirt_block</td>
-            </tr>
-            <tr>
-                <td><strong>/locate</strong></td>
-                <td>locate closest structures, biomes or points of intrest</td>
-                <td>/locate Mansion</td>
-            </tr>
-            <tr>
-                <td>/reload</td>
-                <td>reloads loot tables, advancements and functions from disk</td>
-                <td>/reload</td>
-            </tr>
-            <tr>
-                <td>/seed</td>
-                <td>displays world seed</td>
-                <td>/seed</td>
-            </tr>
-            <tr>
-                <td><strong>/setblock</strong></td>
-                <td>changes a block to another block</td>
-                <td>/setblock ~ ~ ~ ~ ~ ~ water</td>
-            </tr>
-            <tr>
-                <td><strong>/summon</strong></td>
-                <td>summons an entity</td>
-                <td>/summon minecraft:ender_dragon</td>
-            </tr>
-            <tr>
-                <td><strong>/weather</strong></td>
-                <td>sets the weather</td>
-                <td>/weather clear</td>
-            </tr>
-            <tr>
-                <td><strong>/worldborder</strong></td>
-                <td>Manages the world border</td>
-                <td>/world border set 1000000</td>
-            </tr>
-        </table>
-        </div>
-
-        <div id="facts" class="facts">
-          <div class="container">
-            <div class="row no-gutters">
-              <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                <div class="count-box">
-                  <i class="bx bx-analyse"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1.5" class="purecounter"></span> out of <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="3" class="purecounter"></span>
-                  <p><strong>Minecraft Commands</strong></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
     </section><!-- End About Section -->
+
+    <script>
+      loadHTML('_minecraft.html', 'about');
+    </script>
+    
+    
+
 
     <!-- ======= Facts Section ======= -->
     <!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2><h1> Cyclones, Hurricanes and Typhoons</h1>
-            <h3><i><b>Cyclones</b></i></h3>
-            <p><i>Cyclones are tropical storms with winds blowing in a large spiral around the center which is known as the eye which is like a calm zone. Cyclone Jasper's maximum wind speed was 220 km an hour. A cyclone is usually formed in areas with low pressure which draws in nearby winds as the Earth rotates in creates forces the cause the winds to swirl around the low pressure which helps the cyclone to start to spin.</i> </p>
-            <hr>
-            <h3><i><b>Hurricanes</b></i></h3>
-            <p><i>Hurricanes are a rapidly rotating storm system formed by low pressure points with strong winds. For example: Hurricane Patricia is the fastest hurricane ever recorded with winds hitting top speeds of 345 km an hour. Hurricanes are a spiral arrangement of thunderstorms that can produce heavy rain. Warm ocean waters and thunderstorms fuel power-hungry hurricanes. Hurricanes form over the ocean, often beginning as a tropical wave—a low pressure area that moves through the moisture-rich tropics, possibly enhancing shower and thunderstorm activity.</i> </p>
-            <hr>
-            <h3><i><b>Typhoons</b></i></h3>
-            <p><i>Typhoons are formed when wind blows into areas of the ocean where the water is warm. The wind collects the moisture and starts to rise while the colder air moves below which causes pressure which causes the winds to move very quickly. The winds rotate or spin around the center known as the eye. Typhoons are cyclones that originate over warm tropical oceans. The most powerful Typhoon was Typhoon Haiyan. Typhoons can also sometimes make fish rain from the sky since the Typhoons can catch fish from the ocean.</i> </p>
-        </div>
-      </div>
+    <section id="disasters" class="resume">
     </section>
+    <script>
+      loadHTML('_disasters.html', 'disasters');
+    </script>
        
     <!-- ======= Portfolio Section ======= -->
     <section id="earthquake" class="resume">
@@ -487,7 +155,7 @@
     <!-- ======= Volcanoes Section ======= -->
     <section id ="vs" class="resume">
       <div class ="container">
-        <div class = "section title">
+        <div class = "section-title">
           <h2>Volcanoes</h2>
           <p><i>Volcanoes are formed when one tectonic moves under another tectonic plate.
             Usually a thin, heavy oceanic plate subducts or moves under a thick contintental plate.
@@ -507,115 +175,49 @@
       
     </section>
     <!-- ======= End Volcanoes section ======= -->
+
     <!-- ======= Greek and Roman Mythology section ======= -->
     <section id="GRM" class ="facts">
-      <div class="container">
-        <div class = "section title">
-          <h2>Greek and Roman Mythology</h2>
-          <p>
-            Greek and Roman Mythology are very simillar since Roman mythology is an Roman adapted version of Greek Mythology.
-            In the beginning there were the original 11 protogenoi:Chaos, Gaia, Tartarus, Hemera, Chronos, Nyx, Erebus, Aether, Ananke, Eros, Pontus and Ourea.
-            The first race after the protogenoi(Primordial Gods) were the 12 main Titans children of Ouranous and Gaia.
-          </p>
-            <ol>
-              <li> Kronos(Saturn), the titan king and the titan of time(not to be confused with chronos the god of time</li>
-              <li> Iapetus, the titan of Mortality</li>
-              <li> Hyperion, the titan of heavenly light and watchfulness</li>
-              <li> Rhea, the wife of Kronos and the titaness of female fertility, motherhood and generation</li>
-              <li> Koios, titan of the inquisitive mind</li>
-              <li> Crius, titan of constellations</li>
-              <li> Thea, titaness of sigh, prophecy and all things that shimmer, Wife of Hyperion</li>
-              <li> Themis, titaness of divine law and order, prophetic god over the ancient orcales including Delphi</li>
-              <li> Mnemosyne, titaness of memory and rememberance and the inventress of language and words</li>
-              <li> Phoebe, titaness of intelluct and prophecy</li>
-              <li> Tethys, titaness of freshwater</li>
-            </ol>
-            <p>
-            When Ournous threw down their children Gaia convinced the titans to kill Ouranous and from the limbs of Ouranous emerged Aphrodite the goddes of love and beauty.
-            Then the titans had children who were the Gods. There are over a hundred gods so heres a short list of the gods:
-            </p>
-            <ol>
-              <li>Zeus(Jupiter)</li>
-              <li>Hades(Pluto)</li>
-              <li>Hermes(Mercury)</li>
-              <li>Hera(Juno)</li>
-              <li>Ares(Mars)</li>
-              <li>Eros(Cupid)</li>
-              <li>Boreas(Aquilon)</li>
-              <li>Hephaestus(Vulcan)</li>
-              <li>Notus(Auster)</li>
-              <li>Aphrodite(Venus)</li>
-              <li>Hecate</li>
-              <li>Nemesis</li>
-              <li>Hypnos</li>
-              <li>Athena(Minerva)</li>
-              <li>Poseidon(Neptune)</li>
-              <li>Bellona</li>
-              <li>Apollo</li>
-              <li>Artemis(Diana)</li>
-              <li>Hestia(Vesta)</li>
-              <li>Demeter(Ceres)</li>
-              <li>Dionysus(Bacchus)</li>
-              <li>Persephone(Prosperine)</li>
-              <li>Janus</li>
-              <li>Aeolus</li>
-              <li>Pan</li>
-              <li>Asclepius</li>
-              <li>Nike(Victoria)</li>
-              <li>Iris</li>
-              <li>Helios</li>
-              <li>Favonius(Zephyrus)</li>
-              <li>Eurus(Vulturnus)</li>
-              <li>Thanatos(Letus)</li>
-              <li>Triton</li>
-              <li>Kratos</li>
-              <li>Deimos</li>
-              <li>Tyche</li>
-              <li>Achlys</li>
-              <li>Nesoi</li>
-              <li>Selene</li>
-              <li>Clio</li>
-              <li>Keto</li>
-              <li>Eos</li>
-              <li>Metis</li>
-              <li>Harmonia</li>
-              <li>Brizo</li>
-              <li>Thalia</li>
-              <li>Faunus</li>
-              <li>Flora</li>
-              <li>Juventas</li>
-              <li>Febris</li>
-              <li>Aurora</li>
-              <li>Concordia</li>
-              <li>Conventina</li> 
-            </ol>
-            <p>The Three Fates are divine beings that preside over the fates of every god, giant, titan and mortal. The three fates and their jobs are:</p>
-            <ol>
-              <li>Clotho weaved the Threads of Fate, the beginning of all life.</li>
-              <li>Lahkesis would measeure the threads, determining how long a mortal, God, giants and Titans life span would be.</li>
-              <li>Atropos cuts the threads, ending the life</li>
-            </ol>
-            <p>Gaia was furious when the titans were defeated by the gods led by Zeus, so Gaia had more children called the giants.
-              Each giant was designed to have an opposing god. Here is a list of the giants:
-            </p>
-            <ol>
-              <li>Alcyloneus - Bane of Hades</li>
-              <li>Polybotes - Bane of Poseiden</li>
-              <li>Porhyrion - Bane of Zeus</li>
-              <li>Otis and Ephialtes(twins) - Bane of Dionysus</li>
-              <li>Orion - Bane of Apollo and Artemis</li>
-              <li>Hippolytus - Bane of Hermes</li>
-              <li>Enceladus - Bane of Athena</li>
-              <li>Damasen - Bane of Ares(Peaceful Giant)</li>
-              <li>Mimas - Bane of Hephaestus</li>
-              <li>Periboia - Bane of Aphrodite</li>
-              <li>Clytius - Bane of Hecate</li>
-              <li>Thoon - Bane of the Fates</li>
-            </ol>
-        </div>
-      </div>
     </section>
+    <script>
+      loadHTML('_greek_roman.html', 'GRM');
+    </script>
+    <!-- ====== Coding language Section ====== -->
+    <section id ="CL" class = "facts">
+    </section>
+    <script>
+      loadHtML('coding.html', 'CL')
+    </script>
+    <!-- ====== Free Writing Section ====== -->
+    <section id = "LMA" class = "facts">
+    </section>
+    <div class = container>
+      <label>
+        I want to learn more about:
+        <select id="SType">
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="picture">Pictures</option>
+        </select>
+      </label>
+    </div>
+    <p id = "nope"></p>
+  <script>
+    
+    document.getElementById('SType').addEventListener('change', function() {
+      var selectedValue = this.value;
 
+      // Assuming you have separate HTML files for each content
+      fetch(selectedValue + '.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('nope').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the content:', error));
+    });
+  </script>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -642,6 +244,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 
