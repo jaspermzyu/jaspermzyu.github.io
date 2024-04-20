@@ -80,11 +80,26 @@
 
   <main id="main">
 
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+    </section><!-- End About Section -->
+
+    <script>
+      loadHTML('_minecraft.html', 'about');
+    </script>
     
-  
+    
+
 
     <!-- ======= Facts Section ======= -->
     <!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="disasters" class="resume">
+    </section>
+    <script>
+      loadHTML('_disasters.html', 'disasters');
+    </script>
        
     <!-- ======= Portfolio Section ======= -->
     <section id="earthquake" class="resume">
@@ -161,8 +176,44 @@
     </section>
     <!-- ======= End Volcanoes section ======= -->
 
+    <!-- ======= Greek and Roman Mythology section ======= -->
+    <section id="GRM" class ="facts">
+    </section>
+    <script>
+      loadHTML('_greek_roman.html', 'GRM');
+    </script>
+    <!-- ====== Coding language Section ====== -->
 
+    <!-- ====== Free Writing Section ====== -->
+    <section id = "LMA" class = "facts">
+    </section>
+    <div class = container>
+      <label>
+        I want to learn more about:
+        <select id="SType">
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="picture">Pictures</option>
+        </select>
+      </label>
+    </div>
+    <p id = "nope"></p>
+  <script>
+    
+    document.getElementById('SType').addEventListener('change', function() {
+      var selectedValue = this.value;
 
+      // Assuming you have separate HTML files for each content
+      fetch(selectedValue + '.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('nope').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the content:', error));
+    });
+  </script>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -186,6 +237,9 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 
 </body>
