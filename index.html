@@ -30,13 +30,7 @@
   <!-- this is our customised JS file, which contains many functions-->
   <script src="assets/js/utility.js"></script>
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -56,7 +50,7 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-cube"></i> <span>Minecraft</span></a></li>
+          <li><a href="#minecraft" class="nav-link scrollto"><i class="bx bx-cube"></i> <span>Minecraft</span></a></li>
           <li><a href="#disasters" class="nav-link scrollto"><i class="bx bx-cloud-lightning"></i> <span>Windy Disasters</span></a></li>
           <li><a href="#earthquake" class="nav-link scrollto"><i class="bx bx-cube-alt"></i> <span>Earthquakes</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-analyse"></i> <span>Space</span></a></li>
@@ -81,7 +75,7 @@
   <main id="main">
 
     <!-- ======= Minecraft Section ======= -->
-    <section id="about" class="about">
+    <section id="minecraft" class="about">
       <div class="container">
         <ul class="nav nav-pills mb-3" id="pills-tab"  role="tablist">
           <li class="nav-item" role="presentation">
@@ -203,222 +197,6 @@
             </div>
           </div>
         </div>
-       <!--div class="container">
-            <h5>Minecraft Java Commands list</h5>
-            <hr>
-    
-          <div>
-            <table class="table table-hover">
-              <tr>
-                  <th>Command</th>
-                  <th>Uses</th>
-                  <th>How to use</th>
-              </tr>
-              <tr>
-                  <td><strong>/particle</strong></td>
-                  <td>creates particles of your choice</td>
-                  <td>/particle dragons_breath ~ ~ ~  0 0 0 1 2 0 force</td>
-              </tr>
-              <tr>
-                  <td><strong>/time</strong></td>
-                  <td>changes the time of your minecraft world</td>
-                  <td>/time set day</td>
-              </tr>
-              <tr>
-                  <td>/advancement</td>
-                  <td>gives, remove or checks player advancements</td>
-                  <td>/advancement grant @e everything</td>
-              </tr>
-              <tr>
-                  <td>/attributes</td>
-                  <td>Adds removes or sets an entity attribute</td>
-                  <td>/give @s netherite_sword<b>{AttributeModifiers:[{AttributeName:"generic.attack_damage", Name:"generic.attack_damage", Amount:20.0, Operation:0, UUID:[I; 42853, 1689024593, -201178, -1559272105]}]}</b> 1</td>
-              </tr>
-              <tr>
-                  <td>/ban</td>
-                  <td> adds player to banlist</td>
-                  <td>/ban [players username]</td>
-              </tr>
-              <tr>
-                  <td>/banlist</td>
-                  <td>Displays banlist</td>
-                  <td>/banlist</td>
-              </tr>
-              <tr>
-                  <td><strong>/bossbar</strong></td>
-                  <td>Creates and modifies bossbars</td>
-                  <td>/bossbar add first {"text":"Boss Health","color":"blue","bold":true}</td>
-              </tr>
-              <tr>
-                  <td><strong>/clear</strong></td>
-                  <td> clears items form player inventory</td>
-                  <td>/clear [players username]</td>
-              </tr>
-              <tr>
-                  <td>/damage</td>
-                  <td>applies damage to to specific entities</td>
-                  <td>/damage @e[type=iron_golem, limit=1] 1 generic by @e[type=villager, limit=1, name="villager_1"] </td>
-              </tr>
-              <tr>
-                  <td>/data</td>
-                  <td>Get's, merges, modifies and removes block entity and entity NBT data</td>
-                  <td>/data modify entity @e[type=item,distance=..10,limit=1,sort=nearest] PickupDelay set value -1</td>
-              </tr>
-              <tr>
-                  <td>/deop</td>
-                  <td>revokes operator status from a player</td>
-                  <td>/deop [players username]</td>
-              </tr>
-              <tr>
-                  <td><strong>/effect</strong></td>
-                  <td> Adds or removes an effect from an entity</td>
-                  <td>/effect @e speed infinite 255</td>
-              </tr>
-              <tr>
-                  <td><strong>/enchant</strong></td>
-                  <td>adds an enchantment to a players selected item</td>
-                  <td>/enchant [players username] knockback 2</td>
-              </tr>
-              <tr>
-                  <td><strong>/execute</strong></td>
-                  <td>executes another command</td>
-                  <td>/execute @e[type=egg] ~ ~ ~ effect give @e 999999999 255</td>
-              </tr>
-              <tr>
-                  <td><strong>/experience</strong></td>
-                  <td>adds or emoves player's experience</td>
-                  <td>/experience add [players username] 10000 levels</td>
-              </tr>
-              <tr>
-                  <td><strong>/gamemode</strong></td>
-                  <td>sets a players gamemode</td>
-                  <td>/gamemode survival @e</td>
-              </tr>
-              <tr>
-                  <td><strong>/item</strong></td>
-                  <td>maipulates items in inventories</td>
-                  <td>/item replace entity [players username] armor.head with netherite_helmet</td>
-              </tr>
-              <tr>
-                  <td>/kick</td>
-                  <td>kicks a player off a server</td>
-                  <td>/kick [player username]</td>
-              </tr>
-              <tr>
-                  <td><strong>/kill</strong></td>
-                  <td>kills entities</td>
-                  <td>/kill @e</td>
-              </tr>
-              <tr>
-                  <td>/list</td>
-                  <td>Lists players on the server</td>
-                  <td>/list</td>
-              </tr>
-              <tr>
-                  <td>/loot</td>
-                  <td>drops items from an inventory slot onto the ground</td>
-                  <td>/loot give [player username] kill </td>
-              </tr>
-              <tr>
-                  <td>/me</td>
-                  <td>Displays a message about the sender</td>
-                  <td>/me is lost</td>
-              </tr>
-              <tr>
-                  <td><strong>/msg</strong></td>
-                  <td> displats a private message to other players</td>
-                  <td>/msg [players username] I found diamonds</td>
-          
-              </tr>
-              <tr>
-                  <td><strong>/op</strong></td>
-                  <td>Grants Operator status to a player</td>
-                  <td>/op [players username]</td>
-              </tr>
-              <tr>
-                  <td><strong>/scoreboard</strong></td>
-                  <td>Manages scoreboard objectives and players</td>
-                  <td>/scoreboard players list [players username]</td>
-                  <td></td>
-              </tr>
-              <tr>
-                  <td>/tag</td>
-                  <td>Controls enitity tags</td>
-                  <td>/tag [entity type or players username]</td>
-              </tr>
-              <tr>
-                  <td><strong>/tp</strong></td>
-                  <td>teleports entities</td>
-                  <td>/tp @e[type = !player] ~ ~ ~</td>
-              </tr>
-              <tr>
-                  <td><strong>/clone</strong></td>
-                  <td>copies blocks from one place to another</td>
-                  <td>/clone ~ ~ ~   ~20 ~-3 ~15   ~-5 ~ ~-2 replace move</td>
-              </tr>
-              <tr>
-                  <td>/datapack</td>
-                  <td>controls loaded datapacks</td>
-                  <td>/datapack list</td>
-              </tr>
-              </tr>
-              <tr>
-                  <td><strong>/difficulty</strong></td>
-                  <td>sets the difficulty mode</td>
-                  <td>/difficulty peaceful</td>
-              </tr>
-              <tr>
-                  <td><strong>/fill</strong></td>
-                  <td>Fills a region with a specific block</td>
-                  <td>/fill ~ ~ ~ ~ ~ ~ air</td>
-              </tr>
-              <tr>
-                  <td><strong>/gamerule</strong></td>
-                  <td>sets or queries a gamerule value</td>
-                  <td>/gamerule doDaylightCycle false</td>
-              </tr>
-              <tr>
-                  <td><strong>/give</strong></td>
-                  <td>Gives an item to a player</td>
-                  <td>/give @e minecraft:dirt_block</td>
-              </tr>
-              <tr>
-                  <td><strong>/locate</strong></td>
-                  <td>locate closest structures, biomes or points of intrest</td>
-                  <td>/locate Mansion</td>
-              </tr>
-              <tr>
-                  <td>/reload</td>
-                  <td>reloads loot tables, advancements and functions from disk</td>
-                  <td>/reload</td>
-              </tr>
-              <tr>
-                  <td>/seed</td>
-                  <td>displays world seed</td>
-                  <td>/seed</td>
-              </tr>
-              <tr>
-                  <td><strong>/setblock</strong></td>
-                  <td>changes a block to another block</td>
-                  <td>/setblock ~ ~ ~ ~ ~ ~ water</td>
-              </tr>
-              <tr>
-                  <td><strong>/summon</strong></td>
-                  <td>summons an entity</td>
-                  <td>/summon minecraft:ender_dragon</td>
-              </tr>
-              <tr>
-                  <td><strong>/weather</strong></td>
-                  <td>sets the weather</td>
-                  <td>/weather clear</td>
-              </tr>
-              <tr>
-                  <td><strong>/worldborder</strong></td>
-                  <td>Manages the world border</td>
-                  <td>/world border set 1000000</td>
-              </tr>
-          </table>
-          </div-->
     
           <div id="facts" class="facts">
             <div class="container">
