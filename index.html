@@ -140,8 +140,8 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Minecraft Releases</h3>
             <div class="resume-item">
-              <h4>1.21: Tricky Trials Update<span class="badge bg-secondary">Latest</span> <span style="text-size-adjust: 8px;">Released in 2024, June 13th</span></h4>
-              <p><em></em></p>
+              <h4>1.21: Tricky Trials Update<span class="badge bg-secondary">Latest</span></h4>
+              <p><em>Released in 2024, June 13th</em></p>
               <ul>
                   <li>Added Mace</li>
                   <li>Added Wind Charges</li>
@@ -213,10 +213,10 @@
     
         </div>
       </div>
-    
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Minecraft Java Commands</button>
-    
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style= "width: 900px;">
+      <div class="container">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Minecraft Java Commands</button>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style= "width: 1500px;">
         <div class="offcanvas-header">
           <h5 id="offcanvasRightLabel"></h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -250,7 +250,7 @@
               <tr>
                   <td>/attributes</td>
                   <td>Adds removes or sets an entity attribute</td>
-                  <td>/give @s netherite_sword<b>{AttributeModifiers:[{AttributeName:"generic.attack_damage", Name:"generic.attack_damage", Amount:20.0, Operation:0, UUID:[I; 42853, 1689024593, -201178, -1559272105]}]}</b> 1</td>
+                  <td>/give [player name] netherite_sword[attribute_modifiers={modifiers:[{type:"generic.attack_speed",amount:255,slot:mainhand,operation:add_value,id:1730099631949}]}]</b> 1</td>
               </tr>
               <tr>
                   <td>/ban</td>
@@ -435,6 +435,16 @@
                   <td>Manages the world border</td>
                   <td>/world border set 1000000</td>
               </tr>
+              <tr>
+                <td><strong>Most OP sword created for 1.21 Java</strong></td>
+                <td>You will need a command block and paste in this command</td>
+                <td>/give @s netherite_sword[custom_name='["",{"text":"Soulstealer","italic":false}]',lore=['["",{"text":"Forged from the depths of hell, this weapon was designed to extract the soul of its target.","italic":false}]'],item_name=Soulstealer,rarity=epic,enchantments={levels:{fire_aspect:2,knockback:1,sharpness:255,sweeping_edge:255}},attribute_modifiers={modifiers:[{type:"generic.attack_speed",amount:255,slot:mainhand,operation:add_value,id:1730099631949},{type:"generic.max_health",amount:10000000,slot:mainhand,operation:add_value,id:1730099631949},{type:"generic.knockback_resistance",amount:1,slot:mainhand,operation:add_value,id:1730099631949},{type:"generic.attack_damage",amount:204,slot:mainhand,operation:add_value,id:1730099631949},{type:"generic.burning_time",amount:0,operation:add_value,id:1730100777822},{type:"player.entity_interaction_range",amount:64,operation:add_value,id:1730100855523},{type:"generic.movement_speed",amount:2,operation:add_value,id:1730101897393}]},unbreakable={},damage=1000,repair_cost=0,max_damage=50000,fire_resistant={}]</td>
+              </tr>
+              <tr>
+                <td><strong>Knockback Stick</strong></td>
+                <td>Command</td>
+                <td>/give @s stick[enchantments=[levels:{knockback:255}]</td>
+                </tr>
             </table>
           </div>
         </div>
@@ -551,8 +561,8 @@
               <li> Hyperion(Sun), the titan of heavenly light and watchfulness</li>
               <li> Rhea(Ops), the wife of Kronos and the titaness of female fertility, motherhood and generation</li>
               <li> Koios(Coeus), titan of the inquisitive mind</li>
-              <li> Krios(Crius), titan of constellations</li>
-              <li> Theia(Dione), titaness of sigh, prophecy and all things that shimmer, Wife of Hyperion</li>
+              <li> Krios(Crius), titan of stars and constellations</li>
+              <li> Theia(Dione), titaness of sight, prophecy and all things that shimmer, Wife of Hyperion</li>
               <li> Themis(Justitia), titaness of divine law and order, prophetic god over the ancient orcales including Delphi</li>
               <li> Mnemosyne(Moneta), titaness of memory and rememberance and the inventress of language and words</li>
               <li> Phoebe, titaness of intelluct and prophecy</li>
@@ -567,7 +577,7 @@
               <li> Perses(Persaeus), titan of destruction</li>
               <li> Leto(Latona), titaness of motherhood, childbrith and modesty</li>
               <li> Asteria(Delos), titaness of falling stars and nocturnal divination</li>
-              <li> Atlas, titan of strength and enduraance</li>
+              <li> Atlas, titan of strength and endurance</li>
               <li> Pallas, titan of battle and warcraft</li>
               <li> Menoetius, titan of rash actions, violent anger and human mortality</li>
               <li> Metis, titaness of wisdom</li>
